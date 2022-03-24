@@ -41,25 +41,28 @@ for(let i=0; i< pClass.length; i++){
 function styleSection() {
     let firstSection = document.getElementsByTagName(`section`);
     for(let i=0; i< firstSection.length; i++){
-        firstSection[i].style.backgroundColor="maroon";
+        firstSection[i].style.backgroundColor="teal";
     }
     
 }
 
 
 
+//  #7 Example of classList add(), remove(), toggle()
+
+function addClass(className){
+    let dropdown = document.getElementById("giveClass");
+    dropdown.classList.add(className);
+}
+
+function removeClass(className){
+    let dropdown = document.getElementById("giveClass");
+    dropdown.classList.remove(className);
+}
+
+function toggleClass(className){
+    let dropdown = document.getElementById("giveClass");
+    dropdown.classList.toggle(className);
+}
 
 
-
-
-
-
-// function addElement() {
-//     let newH3 = document.createElement(`h3`);
-//     let h3Content = document.querySelector(`h3`);
-//     h3Content.innerText = "This is my new message";
-//     newH3.appendChild(h3Content);
-//     let currentH3 = document.getElementsByTagName(`body`);
-//     document.body.insertAdjacentElement(h2, currentH3)
-    
-// }
